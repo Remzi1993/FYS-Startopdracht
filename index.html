@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>FYS Startopdracht</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/0f7feca8b7.js" crossorigin="anonymous"></script>
-</head>
-<body>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <title>FYS Startopdracht</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/0f7feca8b7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
         <header>
             <nav>
-                <img src="assets/img/logo.png">
+                <img src="assets/img/logo.png" alt="Logo van Remzi Cavdar">
                 <ul>
                     <li>
                         <a href="/">HOME</a>
@@ -24,17 +24,38 @@
                         <a href="/contact.html">CONTACT</a>
                     </li>
                 </ul>
-                <button><a href="tel:+31611719929">06 - 117 199 29</a></button>
+                <a href="tel:+31611719929" class="button">06 - 117 199 29</a>
             </nav>
         </header>
 
         <main>
-                <img src="assets/img/profile-image.jpg" id="profile-image">
+                <!-- id hier gebruikt omdat de styling uniek is voor de profielfoto, zou ook met een class kunnen,
+                echter gebruik ik dit op elke pagina maar 1 keer-->
+                <img src="assets/img/profile-image.jpg" alt="Profielfoto van Remzi Cavdar" id="profile-image">
                 <h1>Remzi Cavdar, student aan de HvA</h1>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam orci ex, lobortis sit amet fermentum quis, maximus vel enim. Nulla facilisis suscipit tellus. Phasellus condimentum dictum congue. Cras porta mauris in nisl malesuada ullamcorper. Pellentesque nulla urna, tincidunt non mauris ac, volutpat volutpat leo. Pellentesque consectetur lectus libero, sed cursus augue pharetra vel. Ut eget tempor nibh, vitae lacinia neque.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut magna vel tellus rhoncus pharetra vel sit amet elit. Donec eget tristique libero, sed vestibulum magna. Proin tincidunt eu turpis sit amet feugiat. Nunc eleifend ut risus ac pulvinar. Donec laoreet efficitur tellus, ut auctor metus aliquet eu. Aliquam euismod, felis nec accumsan euismod, urna nisi laoreet leo, in tristique orci felis at risus. Nulla auctor volutpat nisi, malesuada molestie mi egestas et. Ut hendrerit dictum diam, consectetur viverra nisi euismod nec. Phasellus elementum, magna at efficitur fringilla, est quam condimentum urna, et accumsan est nibh non libero. Mauris feugiat quis massa interdum gravida. Aenean euismod tincidunt pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                <p>Maecenas tortor nulla, fermentum lacinia ultrices ut, ornare sit amet sem. Suspendisse a fringilla ex. Integer mattis sem id ante pharetra, quis maximus est gravida. Duis sagittis dolor eget diam imperdiet, eget aliquam quam sollicitudin. Fusce condimentum velit eu egestas pellentesque. Cras at mattis nisi. Vestibulum blandit a libero id egestas. Proin ac faucibus lacus, nec pharetra diam. Maecenas iaculis, nisi et pulvinar lacinia, arcu mauris rutrum sem, eu vestibulum tortor lorem in mi. Phasellus mattis ullamcorper quam eget ornare. Donec tincidunt condimentum sagittis. Mauris eleifend porta luctus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam orci ex, lobortis sit amet fermentum
+                    quis, maximus vel enim. Nulla facilisis suscipit tellus. Phasellus condimentum dictum congue.
+                    Cras porta mauris in nisl malesuada ullamcorper. Pellentesque nulla urna, tincidunt non mauris ac,
+                    volutpat volutpat leo. Pellentesque consectetur lectus libero, sed cursus augue pharetra vel.
+                    Ut eget tempor nibh, vitae lacinia neque.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut magna vel tellus rhoncus
+                    pharetra vel sit amet elit. Donec eget tristique libero, sed vestibulum magna. Proin tincidunt eu
+                    turpis sit amet feugiat. Nunc eleifend ut risus ac pulvinar. Donec laoreet efficitur tellus,
+                    ut auctor metus aliquet eu. Aliquam euismod, felis nec accumsan euismod, urna nisi laoreet leo,
+                    in tristique orci felis at risus. Nulla auctor volutpat nisi, malesuada molestie mi egestas et.
+                    Ut hendrerit dictum diam, consectetur viverra nisi euismod nec. Phasellus elementum, magna at
+                    efficitur fringilla, est quam condimentum urna, et accumsan est nibh non libero.
+                    Mauris feugiat quis massa interdum gravida. Aenean euismod tincidunt pulvinar.
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                <p>Maecenas tortor nulla, fermentum lacinia ultrices ut, ornare sit amet sem. Suspendisse a
+                    fringilla ex. Integer mattis sem id ante pharetra, quis maximus est gravida.
+                    Duis sagittis dolor eget diam imperdiet, eget aliquam quam sollicitudin.
+                    Fusce condimentum velit eu egestas pellentesque. Cras at mattis nisi.
+                    Vestibulum blandit a libero id egestas. Proin ac faucibus lacus, nec pharetra diam.
+                    Maecenas iaculis, nisi et pulvinar lacinia, arcu mauris rutrum sem, eu vestibulum tortor lorem in mi.
+                    Phasellus mattis ullamcorper quam eget ornare. Donec tincidunt condimentum sagittis.
+                    Mauris eleifend porta luctus.</p>
         </main>
 
         <footer>
@@ -62,5 +83,5 @@
                 </li>
             </ul>
         </footer>
-</body>
+    </body>
 </html>

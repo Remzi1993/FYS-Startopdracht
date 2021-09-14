@@ -1,6 +1,5 @@
 /* Variables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 :root {
     --dark-blue: #424874;
     --blue: #A6B1E1;
@@ -12,10 +11,15 @@
     box-sizing: border-box;
 }
 
-button {
+a.button {
     background: none;
     outline: none;
     cursor: pointer;
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding: 5px 18px;
+    border: 1px solid;
+    border-radius: 5px;
 }
 
 ul {
@@ -52,7 +56,6 @@ body > * {
     padding: 20px;
 }
 
-
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 header {
@@ -83,19 +86,10 @@ header ul li:not(:last-child) {
     padding-right: 15px;
 }
 
-header button {
-    font-family: inherit;
-    font-size: 1.2rem;
-    padding: 5px 18px;
-    border: 1px solid;
-    border-radius: 5px;
-}
-
-header button:hover {
+header a.button:hover {
     background-color: var(--dark-blue);
     color: white;
 }
-
 
 /* Main
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -120,7 +114,6 @@ main p + p {
     margin-top: 10px;
 }
 
-
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
@@ -139,23 +132,18 @@ footer ul li:not(:last-child) {
     margin-right: 20px;
 }
 
-
-
-
-
-
-
 /* Media queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (min-width: 550px) {
     header ul {
+        order: 0;
         width: auto;
         margin: 0;
         padding: 0;
         border-top: none;
     }
 
-    header button {
+    header a.button {
         order: 1;
     }
 

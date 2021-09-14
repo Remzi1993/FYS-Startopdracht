@@ -1,63 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>FYS Startopdracht</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/0f7feca8b7.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<header>
-    <nav>
-        <img src="assets/img/logo.png">
-        <ul>
-            <li>
-                <a href="/">HOME</a>
-            </li>
-            <li>
-                <a href="/cv.html">CV</a>
-            </li>
-            <li>
-                <a href="/contact.html">CONTACT</a>
-            </li>
-        </ul>
-        <button><a href="tel:+31611719929">06 - 117 199 29</a></button>
-    </nav>
-</header>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <title>FYS Startopdracht</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/0f7feca8b7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="assets/img/logo.png" alt="Logo van Remzi Cavdar">
+                <ul>
+                    <li>
+                        <a href="/">HOME</a>
+                    </li>
+                    <li>
+                        <a href="/cv.html">CV</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html">CONTACT</a>
+                    </li>
+                </ul>
+                <a href="tel:+31611719929" class="button">06 - 117 199 29</a>
+            </nav>
+        </header>
 
-<main>
-    <img src="/assets/img/profile-image.jpg" id="profile-image">
-    <h1>CV</h1>
-    <iframe src="/assets/cv.pdf" height="600" width="100%" frameBorder="0"></iframe>
-</main>
+        <main>
+            <img src="assets/img/profile-image.jpg" alt="Profielfoto van Remzi Cavdar" id="profile-image">
+            <h1>CV</h1>
+            <!-- https://validator.w3.org - Ik ben verplicht om deze twee errors erin te laten,
+            doordat dit zo door Google Chrome geconveerteert wordt naar een PDF viewer.
+            Ik kan deze HTML iframe niet door CSS stylen want hij wordt overgenomen door de PDF viewer.
+            Trouwens bij Firefox wel, daar wordt netjes de iframe weergeven en niet omgezet naar iets anders.
+            Alleen deze iframe werkt overal en de compatibiliteit is volgens mij belangrijker dan een conventie-->
+            <iframe src="/assets/cv.pdf" height="600" width="100%" frameBorder="0"></iframe>
+        </main>
 
-<footer>
-    <small>FYS Startopdracht HTML-CSS - Gemaakt door Remzi Cavdar</small>
-    <ul>
-        <li>
-            <a href="mailto:ict@remzi.info" target="_blank">
-                <i class="far fa-envelope"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/in/remzicavdar/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://github.com/Remzi1993" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://twitter.com/remzicavdar" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </li>
-    </ul>
-</footer>
-</body>
+        <footer>
+            <small>FYS Startopdracht HTML-CSS - Gemaakt door Remzi Cavdar</small>
+            <ul>
+                <li>
+                    <a href="mailto:ict@remzi.info" target="_blank">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/remzicavdar/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Remzi1993" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/remzicavdar" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
 </html>
